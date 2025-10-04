@@ -33,7 +33,7 @@ export function Contact() {
         <SectionReveal>
           <div className="mb-8">
             <h2 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-white to-white/60 bg-clip-text text-transparent">
-              Let's Connect
+              Let&apos;s Connect
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-transparent via-white/50 to-transparent mx-auto" />
           </div>
@@ -41,7 +41,7 @@ export function Contact() {
 
         <SectionReveal delay={0.1}>
           <p className="text-lg md:text-xl text-white/70 mb-12 leading-relaxed max-w-2xl mx-auto">
-            I'm always interested in hearing about new projects and opportunities. Whether you have a question or just
+            I&apos;m always interested in hearing about new projects and opportunities. Whether you have a question or just
             want to say hi, feel free to reach out!
           </p>
         </SectionReveal>
