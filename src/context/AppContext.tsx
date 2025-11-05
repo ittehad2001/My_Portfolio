@@ -94,8 +94,7 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
       id: "2",
       title: "COSMIC (W3explorers)",
       shortDescription: `COSMIC – Laravel 8 Container Management ERP
-A comprehensive ERP system that streamlines container logistics from assignment to delivery. Features include container & client management, survey & loading operations, tallying with barcode/QR scanning, PDF/document generation, role-based multi-user access, Excel import/export, API integration via Laravel Passport, and advanced reporting.
-      `,
+A comprehensive ERP system that streamlines container logistics from assignment to delivery. Features include container & client management, survey & loading operations, tallying with barcode/QR scanning, PDF/document generation, role-based multi-user access, Excel import/export, API integration via Laravel Passport, and advanced reporting. `,
       longDescription:
         "",
       image: "/cosmic.jpeg",
@@ -143,7 +142,7 @@ A comprehensive ERP system that streamlines container logistics from assignment 
       title: "Full Stack Developer",
       company: "W3explorers",
       companyUrl: "https://www.w3xplorers.com/",
-      companyLogo: "",
+      companyLogo: "/w3-explorer-logo.jpeg",
       period: "2024 — 2025",
       description: `<div class="space-y-4">
         <div>
