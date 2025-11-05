@@ -15,11 +15,11 @@ const ShinyBadge: React.FC<ShinyBadgeProps> = ({
 }) => {
   return (
     <div
-      className={`group relative inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-gradient-to-r from-neutral-400/10 via-white/10 to-neutral-400/10 backdrop-blur-sm  transition-all duration-500 ${className}`}
+      className={`group relative inline-flex items-center gap-1.5 sm:gap-2 px-2.5 min-[375px]:px-3 sm:px-4 py-1.5 min-[375px]:py-2 rounded-full border border-white/10 bg-gradient-to-r from-neutral-400/10 via-white/10 to-neutral-400/10 backdrop-blur-sm  transition-all duration-500 ${className}`}
     >
-      <div className="relative flex items-center gap-2">
-        <span className='rounded-full size-2 bg-green-600 animate-pulse'></span>
-        <span className="relative z-10 text-xs sm:text-sm font-semibold text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
+      <div className="relative flex items-center gap-1.5 sm:gap-2">
+        <span className='rounded-full size-1.5 min-[375px]:size-2 bg-green-600 animate-pulse shrink-0'></span>
+        <span className="relative z-10 text-[0.7rem] min-[375px]:text-xs sm:text-sm font-semibold text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] leading-tight">
           {text}
         </span>
 
