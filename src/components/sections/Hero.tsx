@@ -48,7 +48,7 @@ export function Hero() {
 
         <SectionReveal delay={0.2}>
           <p className="text-xs min-[375px]:text-sm sm:text-base md:text-lg text-white/70 mb-6 sm:mb-7 md:mb-8 lg:mb-10 max-w-3xl mx-auto leading-relaxed px-2 min-[375px]:px-3 sm:px-4 md:px-6">
-            Hey there, I'm Ittehad Bin Rahim, a Full Stack Developer driven by the challenge of building applications that are performant, intuitive, and built to scale.
+            Hey there, I&apos;m Ittehad Bin Rahim, a Full Stack Developer driven by the challenge of building applications that are performant, intuitive, and built to scale.
           </p>
         </SectionReveal>
 
