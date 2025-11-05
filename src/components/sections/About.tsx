@@ -42,12 +42,12 @@ export function About() {
 
               <div className="text-center lg:text-left">
                 <h3 className="text-3xl font-semibold mb-6 text-white">Background</h3>
-                <div className="space-y-4 text-white/70 leading-relaxed">
+                <div className="space-y-4 text-white/70 leading-relaxed text-justify">
                   <p>
                     I’m a developer with over <span className="font-bold text-xl text-white">2+ years</span> of experience, passionate about building scalable and reliable backends that power modern web applications. While I enjoy crafting clean and efficient code, my strength lies in architecting systems that balance performance, security, and usability
                   </p>
                   <p>
-                    I specialize in <span className="font-bold text-purple-600">PHP</span> and <span className="font-bold text-red-600">Laravel</span> <span className="font-bold text-blue-500">MySQL</span> with a strong foundation in <span className="font-bold text-orange-600">HTML</span>, <span className="font-bold text-blue-500">CSS</span>, and <span className="font-bold text-blue-300">Bootstrap</span>, enabling me to deliver complete solutions when needed. My focus is always on writing maintainable, well-structured code and creating applications that are as robust under the hood as they are smooth for users.
+                    I specialize in <span className="font-bold text-purple-600">PHP</span> and <span className="font-bold text-red-600">Laravel</span>, <span className="font-bold text-blue-500">MySQL</span> with a strong foundation in <span className="font-bold text-orange-600">HTML</span>, <span className="font-bold text-blue-500">CSS</span>, and <span className="font-bold text-blue-300">Bootstrap</span>, enabling me to deliver complete solutions when needed. My focus is always on writing maintainable, well-structured code and creating applications that are as robust under the hood as they are smooth for users.
                   </p>
                 </div>
               </div>
@@ -55,10 +55,10 @@ export function About() {
           </SectionReveal>
 
           {/* Technologies Section */}
-          <SectionReveal delay={0.2} className="lg:col-span-3">
-            <div className="h-full flex flex-col">
+          <SectionReveal delay={0.2} className=" lg:col-span-3">
+            <div className="flex flex-col">
               <h3 className="text-2xl font-semibold mb-6 text-white">Technologies & Tools</h3>
-              <div className="flex-1 relative overflow-hidden bg-gradient-to-br from-white/5 to-white/0 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
+              <div className="flex-1 relative overflow-hidden bg-gradient-to-br from-white/5 to-white/0 backdrop-blur-sm border border-white/10 rounded-2xl mt-4 p-6">
                 {/* Subtle corner accents */}
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-gray-500/10 to-transparent rounded-bl-full" />
                 <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-gray-500/10 to-transparent rounded-tr-full" />
@@ -89,7 +89,7 @@ export function About() {
                             <div className="text-sm font-semibold text-white/90 group-hover:text-white transition-colors">
                               {tech.name}
                             </div>
-                            <div className={`h-0.5 w-0 group-hover:w-full ${tech.color.replace('text-', 'bg-')} transition-all duration-300 mx-auto rounded-full`} />
+                            
                           </div>
                         </div>
                       </div>
@@ -122,8 +122,8 @@ export function About() {
                         <Image
                           src={exp.companyLogo || "/company-placeholder.png"}
                           alt={exp.company}
-                          width={50}
-                          height={50}
+                          width={70}
+                          height={70}
                           className="object-contain"
                         />
                       </a>

@@ -35,7 +35,7 @@ export function Hero() {
         </SectionReveal>
 
         <SectionReveal delay={0.1}>
-          <h1 className="text-5xl md:text-6xl font-bold mb-8 text-white leading-tight tracking-tight">
+          <h1 className="xs:text-4xl sm:text-5xl md:text-6xl font-bold mb-8 text-white leading-tight tracking-tight">
             <span className="inline-block bg-gradient-to-r from-white via-white to-white/60 bg-clip-text text-transparent">
               Crafting Beautiful &
             </span>
@@ -47,15 +47,15 @@ export function Hero() {
         </SectionReveal>
 
         <SectionReveal delay={0.2}>
-          <p className="text-lg text-white/70 mb-10 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-sm md:text-lg text-white/70 mb-10 max-w-3xl mx-auto leading-relaxed">
             Hey there, I’m Ittehad Bin Rahim, a Full Stack Developer driven by the challenge of building applications that are performant, intuitive, and built to scale.
           </p>
         </SectionReveal>
 
         <SectionReveal delay={0.3}>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-            <Button size="lg" asChild>
-              <a href="#projects" className="group relative overflow-hidden">
+            <Button size="lg" asChild className="p-6 hover:bg-neutral-700">
+              <a href="#projects" className="group relative overflow-hidden ">
                 <span className="relative z-10">View Projects</span>
               </a>
             </Button>
@@ -63,9 +63,9 @@ export function Hero() {
               size="lg"
               variant="default"
               asChild
-              className="bg-white text-black hover:bg-white/10 hover:text-white"
+              className="bg-white p-6 text-black hover:bg-gray-100"
             >
-              <a href="https://drive.google.com/file/d/1ImAFJPGWglhds6j65s6m_fU2Ok6MR32S/view?usp=sharing" className="group" target="_blank" rel="noopener noreferrer">
+              <a href="/Ittehad_Bin_Rahim_Resume.pdf" download className="group" target="_blank" rel="noopener noreferrer">
                 <span className="flex items-center justify-between gap-2"><span><File /></span> Resume </span>
               </a>
             </Button>
