@@ -123,9 +123,9 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          {/* Grid layout: Image on left, content on right */}
-          <div className="grid md:grid-cols-[350px,2fr] gap-0">
-            {/* Image container - Left side */}
+          
+          <div className="grid md:grid-cols-[350px,2fr] gap-0 h-full">
+         
             <div
               className="relative h-full min-h-[280px] overflow-hidden bg-black/60 cursor-pointer"
               onClick={() => setIsModalOpen(true)}

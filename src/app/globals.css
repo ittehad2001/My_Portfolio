@@ -41,6 +41,7 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --breakpoint-xs: 18.75rem;
 }
 
 :root {
@@ -119,4 +120,28 @@
   body {
     @apply bg-background text-foreground;
   }
+  body::-webkit-scrollbar {
+    width: 6px;
+  }
+  body::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 8px;
+  }
+  body::-webkit-scrollbar-thumb {
+    background: oklch(70.7% 0.022 261.325);
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+  }
+  body::-webkit-scrollbar-thumb:hover {
+    background: oklch(70.7% 0.022 261.325);
+  }
+  body::-webkit-scrollbar-thumb:active {
+    background: oklch(70.7% 0.022 261.325);
+  }
 }
+/* 
+@media screen and (max-height: 700px) {
+  .text-small {
+    font-size: 2.25rem;
+  }
+} */
