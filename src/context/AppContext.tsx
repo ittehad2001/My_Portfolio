@@ -90,11 +90,25 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
       featured: false,
       current: true
     },
-    {
+   {
       id: "2",
+      title: "Ekobee",
+      shortDescription: `Ekobee – Laravel & React E-commerce Platform for Fashion & Apparel
+      A full-featured online clothing store built with Laravel backend and React frontend, offering seamless shopping experiences from product browsing to checkout. Features include product catalog with categories & filters, shopping cart & wishlist, secure payment integration, order management & tracking, customer accounts with order history, inventory management, promotional tools & discount codes, responsive design for all devices, and comprehensive admin dashboard for sales analytics and store management.`,
+      longDescription:
+        "",
+      image: "/ekobee.jpg",
+      demoUrl: "https://www.airoxdev.com/",
+      repoUrl: "",
+      techIds: ["Laravel", "PHP", "React", "HTML", "CSS", "Bootstrap", "MySQL"],
+      featured: true,
+      current: false,
+    },
+    {
+      id: "3",
       title: "COSMIC (W3explorers)",
       shortDescription: `COSMIC – Laravel 8 Container Management ERP
-A comprehensive ERP system that streamlines container logistics from assignment to delivery. Features include container & client management, survey & loading operations, tallying with barcode/QR scanning, PDF/document generation, role-based multi-user access, Excel import/export, API integration via Laravel Passport, and advanced reporting. `,
+      A comprehensive ERP system that streamlines container logistics from assignment to delivery. Features include container & client management, survey & loading operations, tallying with barcode/QR scanning, PDF/document generation, role-based multi-user access, Excel import/export, API integration via Laravel Passport, and advanced reporting. `,
       longDescription:
         "",
       image: "/cosmic.jpeg",
@@ -105,7 +119,7 @@ A comprehensive ERP system that streamlines container logistics from assignment 
       current: false,
     },
     {
-      id: "3",
+      id: "4",
       title: "Bangladesh Maritime Training Institute LMS (W3explorers)",
       shortDescription: "A Laravel 8-based Learning Management System for maritime education, supporting Administrators, Teachers, and Students. The platform features multimedia-based essay learning, exam management, course enrollment, student evaluation, and comprehensive reporting.With Laravel Passport authentication, DataTables integration, and backup/restore functionality, it ensures secure and efficient management of academic data.",
       longDescription:
