@@ -1,21 +1,28 @@
-"use client"
+"use client";
 
-import { createContext, useContext, type ReactNode } from "react"
-import { Home, User, Briefcase, Mail, Linkedin, Github } from "lucide-react"
-import type { NavItem, Project, TechIcon, Experience } from "../types"
-import { FaLaravel, FaReact, FaPhp, FaWordpressSimple, FaHtml5, FaBootstrap } from "react-icons/fa"
-import { SiMysql } from "react-icons/si"
-import { RiTailwindCssFill } from "react-icons/ri"
-import { PiFileCss } from "react-icons/pi"
+import { createContext, useContext, type ReactNode } from "react";
+import { Home, User, Briefcase, Mail, Linkedin, Github } from "lucide-react";
+import type { NavItem, Project, TechIcon, Experience } from "../types";
+import {
+  FaLaravel,
+  FaReact,
+  FaPhp,
+  FaWordpressSimple,
+  FaHtml5,
+  FaBootstrap,
+} from "react-icons/fa";
+import { SiMysql } from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { PiFileCss } from "react-icons/pi";
 
 interface AppContextType {
-  navItems: NavItem[]
-  projects: Project[]
-  techIcons: TechIcon[]
-  experiences: Experience[]
+  navItems: NavItem[];
+  projects: Project[];
+  techIcons: TechIcon[];
+  experiences: Experience[];
 }
 
-const AppContext = createContext<AppContextType | undefined>(undefined)
+const AppContext = createContext<AppContextType | undefined>(undefined);
 
 export const AppProvider = ({ children }: { children: ReactNode }) => {
   const navItems: NavItem[] = [
@@ -52,51 +59,69 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
       title: "LinkedIn",
       href: "https://www.linkedin.com/in/ittehadbinrahim/",
       icon: <Linkedin className="w-5 h-5" />,
-      tooltip: "LinkedIn"
+      tooltip: "LinkedIn",
     },
     {
       id: "github",
       title: "github",
       href: "https://github.com/ittehad2001",
       icon: <Github className="w-5 h-5" />,
-      tooltip: "github"
+      tooltip: "github",
     },
-  ]
+  ];
 
   const techIcons: TechIcon[] = [
-    { id: "Laravel", name: "Laravel", color: "text-red-500", icon: <FaLaravel /> },
+    {
+      id: "Laravel",
+      name: "Laravel",
+      color: "text-red-500",
+      icon: <FaLaravel />,
+    },
     { id: "PHP", name: "PHP", color: "text-purple-500", icon: <FaPhp /> },
-    { id: "WordPress", name: "WordPress", color: "text-blue-500", icon: <FaWordpressSimple /> },
+    {
+      id: "WordPress",
+      name: "WordPress",
+      color: "text-blue-500",
+      icon: <FaWordpressSimple />,
+    },
     { id: "HTML5", name: "HTML5", color: "text-orange-500", icon: <FaHtml5 /> },
     { id: "CSS3", name: "CSS3", color: "text-blue-400", icon: <PiFileCss /> },
-    { id: "Bootstrap", name: "Bootstrap", color: "text-purple-400", icon: <FaBootstrap /> },
-    { id: "Tailwind", name: "Tailwind", color: "text-cyan-500", icon: <RiTailwindCssFill /> },
+    {
+      id: "Bootstrap",
+      name: "Bootstrap",
+      color: "text-purple-400",
+      icon: <FaBootstrap />,
+    },
+    {
+      id: "Tailwind",
+      name: "Tailwind",
+      color: "text-cyan-500",
+      icon: <RiTailwindCssFill />,
+    },
     { id: "React", name: "React", color: "text-cyan-700", icon: <FaReact /> },
     { id: "MySQL", name: "MySQL", color: "text-blue-500", icon: <SiMysql /> },
-
-  ]
+  ];
 
   const projects: Project[] = [
     {
       id: "1",
       title: "Oxbridge Launchpad (Growthly IT)",
-      shortDescription: "A modern Learning Management System (LMS) built specifically for Oxford and Cambridge admission preparation. The platform delivers structured online courses, personalized coaching, and interactive tools to help students excel in their applications.Since its launch, it has guided learners from schools across the UK, with hundreds of candidates successfully securing places at Oxford and Cambridge.",
-      longDescription:
-        "",
+      shortDescription:
+        "A modern Learning Management System (LMS) built specifically for Oxford and Cambridge admission preparation. The platform delivers structured online courses, personalized coaching, and interactive tools to help students excel in their applications.Since its launch, it has guided learners from schools across the UK, with hundreds of candidates successfully securing places at Oxford and Cambridge.",
+      longDescription: "",
       image: "/oxbrige-launchpad.jpeg",
       demoUrl: "https://oxbridgelaunchpad.com/",
       repoUrl: "",
       techIds: ["Laravel", "PHP", "HTML", "CSS", "Bootstrap", "MySQL"],
       featured: false,
-      current: true
+      current: true,
     },
-   {
+    {
       id: "2",
       title: "Ekobee",
       shortDescription: `Ekobee – Laravel & React E-commerce Platform for Fashion & Apparel
       A full-featured online clothing store built with Laravel backend and React frontend, offering seamless shopping experiences from product browsing to checkout. Features include product catalog with categories & filters, shopping cart & wishlist, secure payment integration, order management & tracking, customer accounts with order history, inventory management, promotional tools & discount codes, responsive design for all devices, and comprehensive admin dashboard for sales analytics and store management.`,
-      longDescription:
-        "",
+      longDescription: "",
       image: "/ekobee.jpg",
       demoUrl: "https://www.airoxdev.com/",
       repoUrl: "",
@@ -109,8 +134,7 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
       title: "COSMIC (W3explorers)",
       shortDescription: `COSMIC – Laravel 8 Container Management ERP
       A comprehensive ERP system that streamlines container logistics from assignment to delivery. Features include container & client management, survey & loading operations, tallying with barcode/QR scanning, PDF/document generation, role-based multi-user access, Excel import/export, API integration via Laravel Passport, and advanced reporting. `,
-      longDescription:
-        "",
+      longDescription: "",
       image: "/cosmic.jpeg",
       demoUrl: "https://www.cosmicctg.com/",
       repoUrl: "",
@@ -121,9 +145,9 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
     {
       id: "4",
       title: "Bangladesh Maritime Training Institute LMS (W3explorers)",
-      shortDescription: "A Laravel 8-based Learning Management System for maritime education, supporting Administrators, Teachers, and Students. The platform features multimedia-based essay learning, exam management, course enrollment, student evaluation, and comprehensive reporting.With Laravel Passport authentication, DataTables integration, and backup/restore functionality, it ensures secure and efficient management of academic data.",
-      longDescription:
-        "",
+      shortDescription:
+        "A Laravel 8-based Learning Management System for maritime education, supporting Administrators, Teachers, and Students. The platform features multimedia-based essay learning, exam management, course enrollment, student evaluation, and comprehensive reporting.With Laravel Passport authentication, DataTables integration, and backup/restore functionality, it ensures secure and efficient management of academic data.",
+      longDescription: "",
       image: "/BCSIR.jpeg",
       demoUrl: "https://onlineexam.w3schoolbd.org/",
       repoUrl: "",
@@ -131,8 +155,7 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
       featured: false,
       current: false,
     },
-
-  ]
+  ];
 
   /*  <p className="text-white/70 leading-relaxed mb-4">
                     {exp.description}
@@ -145,8 +168,7 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
       companyUrl: "https://growthlyit.com/",
       companyLogo: "/growtly.jpg",
       period: "2025 — Present",
-      description:
-        ` <p className="text-white/70 leading-relaxed mb-4">
+      description: ` <p className="text-white/70 leading-relaxed mb-4">
                     Currently managing a Learning Management System with active users, where I handle full-stack operations from backend logic and database management to frontend updates and user experience improvements.
                   </p>`,
       techIds: ["Laravel", "PHP", "HTML5", "CSS3", "Bootstrap", "MySQL"],
@@ -172,15 +194,19 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
 `,
       techIds: ["Laravel", "PHP", "HTML5", "CSS3", "Bootstrap", "MySQL"],
     },
-  ]
+  ];
 
-  return <AppContext.Provider value={{ navItems, projects, techIcons, experiences }}>{children}</AppContext.Provider>
-}
+  return (
+    <AppContext.Provider value={{ navItems, projects, techIcons, experiences }}>
+      {children}
+    </AppContext.Provider>
+  );
+};
 
 export const useAppContext = () => {
-  const context = useContext(AppContext)
+  const context = useContext(AppContext);
   if (context === undefined) {
-    throw new Error("useAppContext must be used within an AppProvider")
+    throw new Error("useAppContext must be used within an AppProvider");
   }
-  return context
-}
+  return context;
+};
