@@ -120,7 +120,7 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
       id: "2",
       title: "Ekobee",
       shortDescription: `Ekobee – Laravel & React E-commerce Platform for Fashion & Apparel
-      A full-featured online clothing store built with Laravel backend and React frontend, offering seamless shopping experiences from product browsing to checkout. Features include product catalog with categories & filters, shopping cart & wishlist, secure payment integration, order management & tracking, customer accounts with order history, inventory management, promotional tools & discount codes, responsive design for all devices, and comprehensive admin dashboard for sales analytics and store management.`,
+      Built solo as my base project. A full-featured online clothing store built with Laravel backend and React frontend, offering seamless shopping experiences from product browsing to checkout. Features include product catalog with categories & filters, shopping cart & wishlist, secure payment integration, order management & tracking, customer accounts with order history, inventory management, promotional tools & discount codes, responsive design for all devices, and comprehensive admin dashboard for sales analytics and store management.`,
       longDescription: "",
       image: "/ekobee.jpg",
       demoUrl: "https://www.airoxdev.com/",
@@ -152,7 +152,7 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
       demoUrl: "https://onlineexam.w3schoolbd.org/",
       repoUrl: "",
       techIds: ["Laravel", "PHP", "HTML", "CSS", "Bootstrap", "MySQL"],
-      featured: false,
+      featured: true,
       current: false,
     },
   ];
