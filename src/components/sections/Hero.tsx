@@ -69,7 +69,7 @@ export function Hero() {
               asChild
               className="w-full min-[375px]:w-auto bg-white px-4 min-[375px]:px-5 sm:px-6 py-2.5 min-[375px]:py-3 md:p-6 text-black hover:bg-gray-100 text-sm min-[375px]:text-base"
             >
-              <a href="https://drive.google.com/file/d/1ImAFJPGWglhds6j65s6m_fU2Ok6MR32S/view?usp=sharing" className="group flex items-center justify-center gap-2" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/file/d/1yr08sNgvscJyWhApYE5vxoGvJCX__qqR/view?usp=sharing" className="group flex items-center justify-center gap-2" target="_blank" rel="noopener noreferrer">
                 <File className="w-4 h-4 min-[375px]:w-4 min-[375px]:h-4" />
                 <span>Resume</span>
               </a>
