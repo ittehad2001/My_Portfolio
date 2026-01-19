@@ -11,7 +11,7 @@ import {
   FaHtml5,
   FaBootstrap,
 } from "react-icons/fa";
-import { SiMysql } from "react-icons/si";
+import { SiMysql, SiVuedotjs } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { PiFileCss } from "react-icons/pi";
 
@@ -99,6 +99,7 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
       icon: <RiTailwindCssFill />,
     },
     { id: "React", name: "React", color: "text-cyan-700", icon: <FaReact /> },
+    { id: "Vue", name: "Vue.js", color: "text-green-500", icon: <SiVuedotjs /> },
     { id: "MySQL", name: "MySQL", color: "text-blue-500", icon: <SiMysql /> },
   ];
 
