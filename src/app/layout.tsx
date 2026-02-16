@@ -67,9 +67,10 @@ export const metadata: Metadata = {
     canonical: siteUrl,
   },
   verification: {
-    // Optional: add when you set them up
+    // Paste the code Google Search Console gives you (HTML tag method):
     // google: "your-google-verification-code",
-    // yandex: "your-yandex-verification-code",
+    // Bing: uncomment and add when you verify in Bing Webmaster Tools
+    // other: { "msvalidate.01": "your-bing-code" },
   },
 };
 
