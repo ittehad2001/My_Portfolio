@@ -11,7 +11,14 @@ import {
   FaHtml5,
   FaBootstrap,
 } from "react-icons/fa";
-import { SiMysql, SiVuedotjs } from "react-icons/si";
+import {
+  SiMysql,
+  SiVuedotjs,
+  SiLinux,
+  SiDocker,
+  SiDigitalocean,
+  SiPostgresql,
+} from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { PiFileCss } from "react-icons/pi";
 
@@ -101,6 +108,20 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
     { id: "React", name: "React", color: "text-cyan-700", icon: <FaReact /> },
     { id: "Vue", name: "Vue.js", color: "text-green-500", icon: <SiVuedotjs /> },
     { id: "MySQL", name: "MySQL", color: "text-blue-500", icon: <SiMysql /> },
+    { id: "Linux", name: "Linux", color: "text-amber-600", icon: <SiLinux /> },
+    { id: "Docker", name: "Docker", color: "text-blue-500", icon: <SiDocker /> },
+    {
+      id: "DigitalOcean",
+      name: "DigitalOcean",
+      color: "text-blue-400",
+      icon: <SiDigitalocean />,
+    },
+    {
+      id: "PostgreSQL",
+      name: "PostgreSQL",
+      color: "text-blue-600",
+      icon: <SiPostgresql />,
+    },
   ];
 
   const projects: Project[] = [
